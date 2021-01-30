@@ -2,6 +2,8 @@
 
 A barebones calculator web app.
 
+Demo: https://jameswalker55.github.io/calculator/
+
 Supported features:
 
 - Add, subtract, multiply, divide: `+ - * /`

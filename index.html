@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="main">
+		<div id="display">
+<!-- 			<div class="expression">1+1</div>
+			<div class="answer">2</div>
+			<div class="expression">1+1</div>
+			<div class="answer">2</div>
+			<div class="expression">1+1</div>
+			<div class="answer">2</div>
+			<div class="expression">1+1</div>
+			<div class="answer">2</div>
+			<div class="expression">1+20-30*4(5+4/2)+5</div>
+			<div class="answer">-814</div>
+			<div class="expression">1+1.5</div>
+			<div class="error">Error: Unrecognised character "."</div>
+			<div class="expression">1+15/5</div>
+			<div class="answer">4</div> -->
+		</div>
+		<!-- <button id="btn_scroll">Scroll to bottom</button> -->
+		<input id="input" placeholder="Input an expression"></input>
+		<div id="buttons_container">
+			<button class="button_number" style="grid-column: 3; grid-row: 2;">9</button>
+			<button class="button_number" style="grid-column: 2; grid-row: 2;">8</button>
+			<button class="button_number" style="grid-column: 1; grid-row: 2;">7</button>
+			<button class="button_number" style="grid-column: 3; grid-row: 3;">6</button>
+			<button class="button_number" style="grid-column: 2; grid-row: 3;">5</button>
+			<button class="button_number" style="grid-column: 1; grid-row: 3;">4</button>
+			<button class="button_number" style="grid-column: 3; grid-row: 4;">3</button>
+			<button class="button_number" style="grid-column: 2; grid-row: 4;">2</button>
+			<button class="button_number" style="grid-column: 1; grid-row: 4;">1</button>
+			<button class="button_number" style="grid-column: 1; grid-row: 5;">0</button>
+
+			<button class="button_operator" style="grid-column: 4; grid-row: 1;">+</button>
+			<button class="button_operator" style="grid-column: 3; grid-row: 1;">-</button>
+			<button class="button_operator" style="grid-column: 2; grid-row: 1;">*</button>
+			<button class="button_operator" style="grid-column: 1; grid-row: 1;">/</button>
+			<button class="button_operator" style="grid-column: 2; grid-row: 5;">(</button>
+			<button class="button_operator" style="grid-column: 3; grid-row: 5;">)</button>
+
+			<button class="button_misc" style="grid-column: 4; grid-row: 2;">AC</button>
+			<button class="button_misc" style="grid-column: 4; grid-row: 3;">Del</button>
+			<button class="button_misc" style="grid-column: 4; grid-row: 4/6;" id="btn_eval">Eval</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="parser.js"></script>
+	<script type="text/javascript" src="ui.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

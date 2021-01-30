@@ -1,0 +1,148 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body * {
+	font-family: "Inter", Arial, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*=====================Buttons=====================*/
+button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 220, 220);
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  margin: 0.3em 0.3em;
+  color: rgb(110,110,110);
+}
+
+button:hover {
+  border-color: rgb(190, 190, 190);
+}
+
+button:active {
+  border-color: rgb(150, 150, 150);
+  background-color: #F4F4F4;
+  color: rgb(20,20,20);
+}
+
+/*====================Main body====================*/
+
+body, html {
+  margin: 0px;
+  padding: 0;
+}
+
+#main {
+  font-size: 18px;
+  position: relative;
+  margin: 0px auto;
+  max-width: 30em;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*======================display======================*/
+#display {
+  overflow: auto;
+  flex-grow: 1;
+  margin: 1em 0 0.5em 0;
+  /*padding: 1em;*/
+}
+
+#display div {
+  padding: 1em 1em;
+  color: rgb(80,80,80);
+}
+
+/*#display > .expression {
+  
+}*/
+
+#display > .answer::before {
+  content: " =  ";
+  white-space: pre;
+}
+
+#display > .answer {
+  font-weight: bold;
+  background-color: rgb(250,250,250);
+}
+
+#display > .error {
+  text-align: right;
+  background-color: rgb(255,235,235);
+}
+
+/*#display div:hover {
+  background-color: rgb(245,245,245);
+}
+
+#display > .answer:hover {
+  background-color: rgb(240,240,240);
+}
+
+#display > .message:hover {
+  background-color: rgb(245,220,220);
+}*/
+
+/*=======================input=======================*/
+#input {
+  padding: 1em 1em 1.2em 1em;
+  margin: 0em 1em;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#input:hover {
+  background-color: rgb(245,245,245);
+}
+
+/*======================buttons======================*/
+
+#buttons_container {
+  /*display: none !important;*/
+
+  margin: 0em 1em 1em 1em;
+  padding: 1em;
+  background-color: rgb(255,255,255);
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#buttons_container > button {
+  font-size: 20px;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+}
+
+.button_operator {
+  background-color: #F7F9FF;
+  font-weight: bold;
+}
+
+.button_operator:active {
+  background-color: #EFF1F7;
+}
+
+/*.button_misc {
+  background-color: #EFF2F9;
+  color: white;
+  font-weight: bold;
+}
+*/
+
